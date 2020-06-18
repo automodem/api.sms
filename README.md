@@ -1,9 +1,9 @@
 # api.sms
+
 Tài liệu hướng dẫn kết nối gửi SMS (OTP) qua automodem.net
-```
-Lưu ý: Bạn cần tạo tài khoản ĐẠI LÝ tại trang [naptiendientu.com](https://naptiendientu.com) 
-để lấy API TOKEN và nạp tiền gửi tin nhắn.
-```
+
+**Lưu ý: Bạn cần tạo tài khoản ĐẠI LÝ tại trang [naptiendientu.com](https://naptiendientu.com) 
+để lấy API TOKEN và nạp tiền gửi tin nhắn.**
 
 ### ENDPOINT
 ```
@@ -32,7 +32,7 @@ Authorization: $API_TOKEN
   messageId: NUMBER,
 }
 ```
-* HTTP CODE 400: Bad request
+* HTTP CODE 400: Bad Request
 * HTTP CODE 401: Unauthorized
 * HTTP CODE 402: Payment Required
 
@@ -53,7 +53,7 @@ public class AutomodemSendSmsExample {
         String API_TOKEN = "AUTHORIZATION_TOKEN";
         String SENDER = "0912345678";
         String PHONE_NUMBER = "0987654321";
-        String MESSAGE = "Hello from automodem.net";
+        String MESSAGE = "Hello from automodem.net"; // LENGTH <= 140 in ASCII and <= 70 in UTF-8
 
         HttpPost httpPost = null;
 
