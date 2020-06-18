@@ -1,7 +1,8 @@
 # api.sms
 Tài liệu hướng dẫn kết nối gửi SMS (OTP) qua automodem.net
 ```
-Lưu ý: Bạn cần tạo tài khoản ĐẠI LÝ tại trang https://naptiendientu.com để lấy API TOKEN và nạp tiền gửi tin nhắn.
+Lưu ý: Bạn cần tạo tài khoản ĐẠI LÝ tại trang [naptiendientu.com](https://naptiendientu.com) 
+để lấy API TOKEN và nạp tiền gửi tin nhắn.
 ```
 
 ### ENDPOINT
