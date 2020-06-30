@@ -35,6 +35,7 @@ Authorization: $API_TOKEN
 * HTTP CODE 400: Bad Request
 * HTTP CODE 401: Unauthorized
 * HTTP CODE 402: Payment Required
+* HTTP CODE 503: Service Unavailable
 
 ### JAVA EXAMPLE (USING APACHE HTTP CLIENT)
 ```ruby
@@ -53,7 +54,8 @@ public class AutomodemSendSmsExample {
         String API_TOKEN = "AUTHORIZATION_TOKEN";
         String SENDER = "0912345678";
         String PHONE_NUMBER = "0987654321";
-        String MESSAGE = "Hello from automodem.net"; // LENGTH <= 140 in ASCII and <= 70 in UTF-8
+        // String MESSAGE = "Hello from automodem.net"; // LENGTH <= 140 in ASCII and <= 70 in UTF-8
+        String MESSAGE = "66668888"; // Support digits only (currently)
 
         HttpPost httpPost = null;
 
