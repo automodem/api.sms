@@ -52,10 +52,10 @@ public class AutomodemSendSmsExample {
 
         String AUTOMODEM_ENPOINT = "https://automodem.net:12368/sms/v1.1";
         String API_TOKEN = "AUTHORIZATION_TOKEN";
-        String SENDER = "0912345678";
-        String PHONE_NUMBER = "0987654321";
+        String SENDER = "0912345678"; // Sender account phone number
+        String PHONE_NUMBER = "0987654321"; // Dest phone number (10 digits, startwith 0)
         // String MESSAGE = "Hello from automodem.net"; // LENGTH <= 140 in ASCII and <= 70 in UTF-8
-        String MESSAGE = "66668888"; // Support digits only (currently)
+        String MESSAGE = "66668888"; // Support digits [d{4,8}] only (currently)
 
         HttpPost httpPost = null;
 
